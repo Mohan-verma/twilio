@@ -3,10 +3,11 @@ const validator = require('validator');
 
 
 const userSchema = new mongoose.Schema({
-  user: Number,
+  user: String,
+  status: String
 })
 
-const OTP = new mongoose.model('User', userSchema);
+const OTP = new mongoose.model('Phonenumber', userSchema);
 
 
 module.exports = { OTP }
